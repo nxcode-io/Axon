@@ -635,8 +635,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ## Community & Support
 
-- **GitHub Issues**: [Report bugs and request features](https://github.com/nxcode/axon-engine/issues)
-- **Discussions**: [Community discussions and Q&A](https://github.com/nxcode/axon-engine/discussions)
+- **GitHub Issues**: [Report bugs and request features](https://github.com/nxcode-io/axon/issues)
+- **Discussions**: [Community discussions and Q&A](https://github.com/nxcode-io/axon/discussions)
 - **Documentation**: [Comprehensive guides and API reference](docs/)
 
 ## License
@@ -653,7 +653,7 @@ Axon Engine is part of the **nxcode Open Source Initiative**, dedicated to build
 
 <div align="center">
 
-**[⭐ Star us on GitHub](https://github.com/nxcode/axon-engine)** if you find Axon useful!
+**[⭐ Star us on GitHub](https://github.com/nxcode-io/axon)** if you find Axon useful!
 
 Made with ❤️ by the nxcode team
 
