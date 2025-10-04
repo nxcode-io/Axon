@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="1000" height="750">
+  <defs>
+    <style>
+      .layer-title { font-family: 'SF Pro Display', 'Segoe UI', Arial, sans-serif; font-size: 22px; font-weight: 700; text-anchor: middle; }
+      .subtitle-text { font-family: 'SF Pro Display', 'Segoe UI', Arial, sans-serif; font-size: 14px; font-style: italic; text-anchor: middle; opacity: 0.85; }
+      .component-text { font-family: 'SF Pro Display', 'Segoe UI', Arial, sans-serif; font-size: 15px; font-weight: 600; text-anchor: middle; }
+      .title-main { font-family: 'SF Pro Display', 'Segoe UI', Arial, sans-serif; font-size: 32px; font-weight: 800; fill: #1a1a1a; text-anchor: middle; }
+      .icon { opacity: 0.3; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="grad-workbench" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-guard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffe0b2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-engine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1bee7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-provider" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="750" fill="#fafafa"/>
+
+  <!-- Title with decorative elements -->
+  <circle cx="200" cy="40" r="6" fill="#7b1fa2" opacity="0.3"/>
+  <circle cx="220" cy="35" r="4" fill="#1976d2" opacity="0.3"/>
+  <circle cx="780" cy="40" r="6" fill="#f57c00" opacity="0.3"/>
+  <circle cx="800" cy="35" r="4" fill="#388e3c" opacity="0.3"/>
+  <text x="500" y="50" class="title-main">Axon Architecture</text>
+  <line x1="250" y1="60" x2="750" y2="60" stroke="#ddd" stroke-width="2"/>
+
+  <!-- Layer 1: Axon Workbench -->
+  <rect x="100" y="100" width="800" height="100" fill="url(#grad-workbench)" stroke="#1976d2" stroke-width="3" rx="12" filter="url(#shadow)"/>
+
+  <!-- Monitor Icon -->
+  <rect x="120" y="125" width="50" height="35" fill="none" stroke="#1565c0" stroke-width="2.5" rx="4"/>
+  <rect x="135" y="162" width="20" height="8" fill="none" stroke="#1565c0" stroke-width="2"/>
+  <line x1="145" y1="170" x2="145" y2="175" stroke="#1565c0" stroke-width="2"/>
+  <line x1="135" y1="175" x2="155" y2="175" stroke="#1565c0" stroke-width="2"/>
+
+  <text x="500" y="135" class="layer-title" fill="#1565c0">Axon Workbench</text>
+  <text x="500" y="165" class="subtitle-text" fill="#1976d2">(Debugging &amp; Monitoring)</text>
+
+  <!-- Downward arrows -->
+  <path d="M 500 200 L 500 220" stroke="#1976d2" stroke-width="3" marker-end="url(#arrowblue)"/>
+
+  <!-- Layer 2: Axon Guard -->
+  <rect x="100" y="225" width="800" height="100" fill="url(#grad-guard)" stroke="#f57c00" stroke-width="3" rx="12" filter="url(#shadow)"/>
+
+  <!-- Shield Icon -->
+  <path d="M 145 255 L 145 285 Q 145 295 155 295 Q 165 295 165 285 L 165 255 Q 155 250 145 255 Z" fill="none" stroke="#ef6c00" stroke-width="2.5"/>
+  <path d="M 150 265 L 153 270 L 160 260" fill="none" stroke="#ef6c00" stroke-width="2"/>
+
+  <text x="500" y="260" class="layer-title" fill="#ef6c00">Axon Guard</text>
+  <text x="500" y="290" class="subtitle-text" fill="#f57c00">(Deterministic Policy Engine)</text>
+
+  <!-- Downward arrows -->
+  <path d="M 500 325 L 500 345" stroke="#f57c00" stroke-width="3" marker-end="url(#arroworange)"/>
+
+  <!-- Layer 3: Axon Engine -->
+  <rect x="100" y="350" width="800" height="240" fill="url(#grad-engine)" stroke="#7b1fa2" stroke-width="3" rx="12" filter="url(#shadow)"/>
+
+  <!-- Gear Icon -->
+  <circle cx="145" cy="390" r="12" fill="none" stroke="#6a1b9a" stroke-width="2.5"/>
+  <circle cx="145" cy="390" r="6" fill="none" stroke="#6a1b9a" stroke-width="2"/>
+  <rect x="139" y="376" width="12" height="4" fill="#6a1b9a" opacity="0.6"/>
+  <rect x="139" y="400" width="12" height="4" fill="#6a1b9a" opacity="0.6"/>
+  <rect x="133" y="384" width="4" height="12" fill="#6a1b9a" opacity="0.6"/>
+  <rect x="153" y="384" width="4" height="12" fill="#6a1b9a" opacity="0.6"/>
+
+  <text x="500" y="385" class="layer-title" fill="#6a1b9a">Axon Engine</text>
+
+  <!-- Engine Components - Row 1 -->
+  <rect x="140" y="410" width="220" height="70" fill="#ffffff" stroke="#9c27b0" stroke-width="2.5" rx="8" filter="url(#shadow)"/>
+  <circle cx="165" cy="445" r="3" fill="#9c27b0"/>
+  <text x="250" y="450" class="component-text" fill="#6a1b9a">Orchestrator</text>
+
+  <rect x="390" y="410" width="220" height="70" fill="#ffffff" stroke="#9c27b0" stroke-width="2.5" rx="8" filter="url(#shadow)"/>
+  <circle cx="415" cy="445" r="3" fill="#9c27b0"/>
+  <text x="500" y="450" class="component-text" fill="#6a1b9a">Router</text>
+
+  <rect x="640" y="410" width="220" height="70" fill="#ffffff" stroke="#9c27b0" stroke-width="2.5" rx="8" filter="url(#shadow)"/>
+  <circle cx="665" cy="445" r="3" fill="#9c27b0"/>
+  <text x="750" y="450" class="component-text" fill="#6a1b9a">Planner</text>
+
+  <!-- Engine Components - Row 2 -->
+  <rect x="140" y="500" width="220" height="70" fill="#ffffff" stroke="#9c27b0" stroke-width="2.5" rx="8" filter="url(#shadow)"/>
+  <circle cx="165" cy="535" r="3" fill="#9c27b0"/>
+  <text x="250" y="540" class="component-text" fill="#6a1b9a">Executor</text>
+
+  <rect x="390" y="500" width="220" height="70" fill="#ffffff" stroke="#9c27b0" stroke-width="2.5" rx="8" filter="url(#shadow)"/>
+  <circle cx="415" cy="535" r="3" fill="#9c27b0"/>
+  <text x="500" y="540" class="component-text" fill="#6a1b9a">Agents</text>
+
+  <rect x="640" y="500" width="220" height="70" fill="#ffffff" stroke="#9c27b0" stroke-width="2.5" rx="8" filter="url(#shadow)"/>
+  <circle cx="665" cy="535" r="3" fill="#9c27b0"/>
+  <text x="750" y="540" class="component-text" fill="#6a1b9a">Tools</text>
+
+  <!-- Connecting lines between components (subtle) -->
+  <line x1="250" y1="480" x2="250" y2="500" stroke="#9c27b0" stroke-width="2" opacity="0.3"/>
+  <line x1="500" y1="480" x2="500" y2="500" stroke="#9c27b0" stroke-width="2" opacity="0.3"/>
+  <line x1="750" y1="480" x2="750" y2="500" stroke="#9c27b0" stroke-width="2" opacity="0.3"/>
+
+  <!-- Downward arrows -->
+  <path d="M 300 590 L 300 610" stroke="#7b1fa2" stroke-width="3" marker-end="url(#arrowpurple)"/>
+  <path d="M 500 590 L 500 610" stroke="#7b1fa2" stroke-width="3" marker-end="url(#arrowpurple)"/>
+  <path d="M 700 590 L 700 610" stroke="#7b1fa2" stroke-width="3" marker-end="url(#arrowpurple)"/>
+
+  <!-- Layer 4: Provider Layer -->
+  <rect x="100" y="615" width="800" height="115" fill="url(#grad-provider)" stroke="#388e3c" stroke-width="3" rx="12" filter="url(#shadow)"/>
+
+  <!-- Database Icon -->
+  <ellipse cx="145" cy="655" rx="15" ry="6" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+  <path d="M 130 655 L 130 670 Q 130 676 145 676 Q 160 676 160 670 L 160 655" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+  <line x1="130" y1="662" x2="160" y2="662" stroke="#2e7d32" stroke-width="2"/>
+
+  <text x="500" y="650" class="layer-title" fill="#2e7d32">Provider Layer</text>
+
+  <!-- Provider Components -->
+  <rect x="180" y="675" width="200" height="45" fill="#ffffff" stroke="#4caf50" stroke-width="2.5" rx="8" filter="url(#shadow)"/>
+  <circle cx="200" cy="697" r="3" fill="#4caf50"/>
+  <text x="280" y="703" class="component-text" fill="#2e7d32">LLM Providers</text>
+
+  <rect x="400" y="675" width="200" height="45" fill="#ffffff" stroke="#4caf50" stroke-width="2.5" rx="8" filter="url(#shadow)"/>
+  <circle cx="420" cy="697" r="3" fill="#4caf50"/>
+  <text x="500" y="703" class="component-text" fill="#2e7d32">Memory Providers</text>
+
+  <rect x="620" y="675" width="200" height="45" fill="#ffffff" stroke="#4caf50" stroke-width="2.5" rx="8" filter="url(#shadow)"/>
+  <circle cx="640" cy="697" r="3" fill="#4caf50"/>
+  <text x="720" y="703" class="component-text" fill="#2e7d32">Cache Providers</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowblue" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1976d2" />
+    </marker>
+    <marker id="arroworange" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f57c00" />
+    </marker>
+    <marker id="arrowpurple" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7b1fa2" />
+    </marker>
+  </defs>
+</svg>
