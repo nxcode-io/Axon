@@ -35,7 +35,7 @@
 
 ## Overview
 
-# **Axon : Multi-Agent SDK — Pluggable, Self-Evolving, Builder-Control, and Enterprise-Grade Secure**
+# **Axon : Multi-Agent SDK — Pluggable, Self-Evolving, Builder-Control, and Financial-Grade Secure**
 
 
 ## **Key Features**
@@ -43,61 +43,57 @@
 
 ### **Pluggable**
 
-Axon is *universally pluggable* — every component, from **LLMs**, **memory**, and **tools** to **routers** and the **core runtime**, follows open provider standards.
-It can **connect with**, **extend**, or **embed** other ecosystems like **LangChain**, **Coze**, **Dify**, or **n8n** — and those systems can do the same with Axon.
-No hierarchy, no lock-in — just **two-way composability** across frameworks.
 
 
-### **Context**
+Migration cost is zero, fully user-friendly
+- Axon can be freely integrated with any framework, such as LangChain, Coze, Dify, or n8n, and other frameworks can also be seamlessly connected to Axon. This ensures zero development overhead and eliminates migration costs
+- All components are fully plug-and-play, such as LLM providers (GPT, Claude, Gemini, Grok), memory components, and planning executors.
 
-Axon has a **built-in context engine** that manages goals, states, and artifacts across all agents and executions.
-Agents don’t just talk — they **share and evolve a common memory space**, so information flows seamlessly across steps and roles.
-This unified context layer solves the classic **multi-agent pain point** of fragmented state, enabling coherent reasoning and adaptive collaboration.
 
+
+### **Perfect Multi-Agent Context Engineering**
+
+Solve problems such as context contamination, state fragmentation, uncontrollable behavior, and misunderstandings.
+- Equipped with a comprehensive agent-to-agent information transmission protocol framework, the protocol allows for customized information content and type, while ensuring accuracy and consistency.
+- In situations where context is confused or missing, agents intelligently communicate and find the correct context.
+- Agents align on goals and share a state board containing the current state information of the overall goal, ensuring consistent state.
 
 ### **Memory**
 
-In Axon, memory is a **native property of every agent**, not an add-on.
-It unifies **short-term**, **mid-term**, and **long-term** memory — plus **episodic** and **semantic** layers — all managed through adaptive retention and recall strategies to approach **near-infinite context**.
-Fully **pluggable**, developers can swap in their preferred providers (Redis, vector DBs, file systems, etc.) without changing logic or flow.
-
-
-### **Evolvable**
-
-Axon is built to **learn from experience**.
-Agents accumulate knowledge from goal–outcome feedback, refining their own strategies and heuristics over time.
-At the framework level, Axon automatically generates **high-quality traces and labeled data** for **SFT** and **RL** training, with an integrated **evaluation suite** to define and measure what “good” looks like — closing the loop between execution and model evolution.
-
-
-### **Security**
-
-Axon enforces **dual-layer safety** to keep both LLM and agent behavior verifiably compliant.
-A deterministic **policy engine** and a probabilistic **guidance layer** jointly guard every stage — planning, tool use, and output — to prevent unsafe or out-of-scope actions.
-All agent decisions are **fully auditable**, with structured traces, logs, and policy evaluations that make every step explainable and reviewable.
-
+Solve the problems of loop freezing, memory drift and redundancy, and chaotic retrieval
+1. Memory functions include: memory compression (active and passive), memory hierarchical management
+2. Memory system support: short-term, mid term, and long-term memory, situational and semantic memory, adaptive strategies to achieve almost infinite context
 
 ### **AI-Native**
 
-Axon is **agent-native by design** — agents are the **first-class computational primitive**, not an abstraction layer.
-Each agent runs with **multi-mode execution** — `STEP`, `REACT`, or `PLAN_AND_EXECUTE` — for dynamic reasoning and adaptive control across tasks.
-Beyond single-agent workflows, **Axon Nexus** provides a **network layer for large-scale collaboration**, where agents communicate through standardized **ACL protocols**, form **contract-based agreements**, and self-organize into **market-driven ecosystems**.
-Asynchronous, observable, and architected as an **AI-first operating system**, Axon scales from local prototypes to distributed intelligent societies.
+Agents freely orchestrate task implementation paths, unlike traditional workflows.
+- The agent includes a comprehensive toolkit, including tools, web search browsers, file operations, terminal functionality, and agent-as-a-tool.
+- Through Axon Nexus, intelligent agents collaborate using standard protocols and self-organize into a market-based ecosystem.
+- The agent system is scalable, enabling evolution from a local prototype to a distributed intelligent society.
 
+### **Evolvable**
+
+Axon gets smarter with use.
+- At the agent level, the system accumulates knowledge and continuously optimizes its strategies through feedback on goals and outcomes.
+- At the framework level, Axon automatically generates execution traces and annotated data for SFT and RL training. An integrated evaluation suite defines and measures metrics, creating a closed loop between execution and model evolution.
+
+### **Security**
+
+- Runs in a sandbox environment to ensure agent behavior is secure.
+- Axon employs a two-layer security mechanism to ensure verifiable and compliant agent behavior.
+- A deterministic policy engine works in conjunction with a probabilistic guidance layer to prevent out-of-bounds or unsafe operations.
 
 ### **Builder-Control**
 
-Axon gives developers **full, explicit control** over how intelligence runs.
-Every prompt, tool, plan, routing rule, and budget lives in code or policy — **versioned, testable, and reviewable**.
-No hidden chains or opaque reasoning: builders define the logic, Axon enforces it.
-This balance of **autonomy with governance** lets teams scale intelligent systems with confidence and accountability.
-
+Built-in version control gives developers full control over the entire process.
+- Version control ensures full traceability and rollback of all functional nodes.
+- Builder controllability: Agent decisions and all behaviors are fully controllable and visualized, with the system generating execution traces, logs, and policy evaluations.
 
 ### **Structured Output (Format)**
 
-Axon guarantees **consistent, structured outputs** across any LLM provider — even those that don’t natively support it.
-Agents validate responses against **Pydantic-style schemas**, automatically re-asking or repairing malformed outputs until they match spec.
-This provider-agnostic layer turns probabilistic text into **deterministic, contract-compliant data** you can trust in production.
+Guarantees **consistent, structured outputs** across any LLM provider — even those that don’t natively support it.
 
+- Validate responses against **Pydantic-style schemas**, automatically repairing malformed outputs until they match spec.
 
 ## Installation
 
