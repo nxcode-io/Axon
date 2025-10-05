@@ -61,8 +61,8 @@ Solve problems such as context contamination, state fragmentation, uncontrollabl
 ### **Memory**
 
 Solve the problems of loop freezing, memory drift and redundancy, and chaotic retrieval
-1. Memory functions include: memory compression (active and passive), memory hierarchical management
-2. Memory system support: short-term, mid term, and long-term memory, situational and semantic memory, adaptive strategies to achieve almost infinite context
+- Memory functions include: memory compression (active and passive), memory hierarchical management
+- Memory system support: short-term, mid term, and long-term memory, situational and semantic memory, adaptive strategies to achieve almost infinite context
 
 ### **AI-Native**
 
