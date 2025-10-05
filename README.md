@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**Multi-Agent SDK — Pluggable, Self-Evolving, Builder-Control, and Financial-Grade Secure**
+**Multi-Agent SDK — Pluggable, Self-Evolving, Builder-Control, and Enterprise-Grade Secure**
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -35,7 +35,7 @@
 
 ## Overview
 
-# **Axon : Multi-Agent SDK — Pluggable, Self-Evolving, Builder-Control, and Financial-Grade Secure**
+# **Axon : Multi-Agent SDK — Pluggable, Self-Evolving, Builder-Control, and Enterprise-Grade Secure**
 
 
 ## **Key Features**
