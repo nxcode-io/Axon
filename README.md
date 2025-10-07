@@ -43,57 +43,73 @@
 
 ### **Pluggable**
 
+Zero migration cost, completely user-friendly.
 
+- **Pluggable with any framework**: Axon plugs in freely with any framework, and all frameworks can also connect to Axon, such as LangChain, Coze, Dify, or n8n.
 
-Migration cost is zero, fully user-friendly
-- Axon can be freely integrated with any framework, such as LangChain, Coze, Dify, or n8n, and other frameworks can also be seamlessly connected to Axon. This ensures zero development overhead and eliminates migration costs
-- All components are fully plug-and-play, such as LLM providers (GPT, Claude, Gemini, Grok), memory components, and planning executors.
+- **Pluggable with all components**: All tools and components are fully plug-and-play, including LLM providers (GPT, Claude, Gemini, Grok), in-memory components, and schedulers.
 
 
 
 ### **Perfect Multi-Agent Context Engineering**
 
-Solve problems such as context contamination, state fragmentation, uncontrollable behavior, and misunderstandings.
-- Equipped with a comprehensive agent-to-agent information transmission protocol framework, the protocol allows for customized information content and type, while ensuring accuracy and consistency.
-- In situations where context is confused or missing, agents intelligently communicate and find the correct context.
-- Agents align on goals and share a state board containing the current state information of the overall goal, ensuring consistent state.
+This solution addresses issues such as context contamination, state fragmentation, uncontrollable behavior, and misunderstandings.
+
+- **Transparent, 100% Transmission Protocol**: Equipped with an agent-based transmission protocol framework, it allows customization of transmission content and types, ensuring 100% protocol compliance while ensuring accuracy and consistency.
+
+- **Contextual Autonomy**: Agents are able to communicate intelligently and find the correct context even when context is unclear or missing.
+
+- **State Consistency**: Agents coordinate based on their goals and share a stateboard containing the current state of the overall goal to ensure state consistency.
 
 ### **Memory**
 
-Solve the problems of loop freezing, memory drift and redundancy, and chaotic retrieval
-- Memory functions include: memory compression (active and passive), memory hierarchical management
-- Memory system support: short-term, mid term, and long-term memory, situational and semantic memory, adaptive strategies to achieve almost infinite context
+Solve loop freezing, memory drift, redundancy, and chaotic retrieval problems.
+
+- **Memory compression**: Active and passive compression. Agents can manage their own memory through compression, while model boundaries can be passively compressed.
+
+- **Memory hierarchical management**: Short-term, medium-term, and long-term memory, contextual memory, and semantic memory.
+
+- **Autonomous memory query**: Implementing adaptive strategies for virtually unlimited context.
 
 ### **AI-Native**
 
-Agents freely orchestrate task implementation paths, unlike traditional workflows.
-- The agent includes a comprehensive toolkit, including tools, web search browsers, file operations, terminal functionality, and agent-as-a-tool.
-- Through Axon Nexus, intelligent agents collaborate using standard protocols and self-organize into a market-based ecosystem.
-- The agent system is scalable, enabling evolution from a local prototype to a distributed intelligent society.
+Unlike traditional workflows, agents can freely orchestrate task execution paths.
+
+- **Agent Collaboration**: Through Axon Nexus, intelligent agents can collaborate using standard protocols and self-organize into a market-based ecosystem.
+
+- **AI-Native Tools**: Agents include a comprehensive toolkit, including tools, web search browsers, file operations, terminal functionality, and agent-as-a-tool functionality.
+
+- **Agent Extensibility**: The agent system is scalable, enabling it to evolve from a local prototype to a distributed intelligent society.
 
 ### **Evolvable**
 
 Axon gets smarter with use.
-- At the agent level, the system accumulates knowledge and continuously optimizes its strategies through feedback on goals and outcomes.
-- At the framework level, Axon automatically generates execution traces and annotated data for SFT and RL training. An integrated evaluation suite defines and measures metrics, creating a closed loop between execution and model evolution.
+
+- **Agent Evolution**: At the agent level, the system accumulates knowledge and continuously optimizes its policies through feedback on goals and outcomes.
+
+- **Framework Evolution**: At the framework level, Axon automatically generates execution traces and annotated data for SFT and RL training. An integrated evaluation suite defines and measures metrics, closing the loop between execution and model evolution.
 
 ### **Security**
 
-- Runs in a sandbox environment to ensure agent behavior is secure.
-- Axon employs a two-layer security mechanism to ensure verifiable and compliant agent behavior.
-- A deterministic policy engine works in conjunction with a probabilistic guidance layer to prevent out-of-bounds or unsafe operations.
+- **Sandbox Environment**: Runs in a sandbox environment to ensure agent safety.
+
+- **Deterministic Strategy Engine**: Provides financial-grade security, ensuring execution only when compliance with safety rules is met.
+
+- **Probabilistic Guidance Layer**: LLM participates in decision-making to prevent unauthorized or unsafe operations.
 
 ### **Builder-Control**
 
 Built-in version control gives developers full control over the entire process.
-- Version control ensures full traceability and rollback of all functional nodes.
-- Builder controllability: Agent decisions and all behaviors are fully controllable and visualized, with the system generating execution traces, logs, and policy evaluations.
+
+- **Version Control**: Ensures full traceability and rollback of all functional nodes.
+
+- **Builder Controllability**: Agent decisions and all behaviors are fully controllable and visible, with execution traces, logs, and policy evaluations generated by the system.
 
 ### **Structured Output (Format)**
 
-Guarantees **consistent, structured outputs** across any LLM provider — even those that don’t natively support it.
+- Ensure consistent and structured output across all LLM providers (even those that don't natively support the format).
 
-- Validate responses against **Pydantic-style schemas**, automatically repairing malformed outputs until they match spec.
+- Validate responses against a Pydantic-style schema, automatically fixing malformed output until it conforms to the specification.
 
 ## Installation
 
